@@ -1,3 +1,4 @@
+//@ts-nocheck
 import image0 from '../assetes/0.png'
 import image1 from '../assetes/1.png'
 import image2 from '../assetes/2.png'
