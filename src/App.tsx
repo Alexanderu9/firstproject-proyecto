@@ -68,7 +68,7 @@ function App() {
       {/* palabra oculta*/}
       <h3>{hiddenWord}</h3>
       {/* contador  de intetos*/}
-      <h3> intentos: {attempts}</h3>
+      <h3> Tentativas: {attempts}</h3>
       {/* mensaje si perdio  */}
       {lose ? <h2> 
 VOCÊ PERDEU, era {word}</h2> : '  '}
