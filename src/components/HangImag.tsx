@@ -32,7 +32,7 @@ export function HangImage({ imageNumber }: Props) {
     imageNumber = 9
   }
 
-  return <img src={images[imageNumber]} alt='Hang Image' style={{ width: 250 }} />
+  return <img src={images[imageNumber]} alt='Hang Image' style={{ width: 100 }} />
 
   // jsx Elemnten
 }
