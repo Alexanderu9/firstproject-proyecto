@@ -70,9 +70,10 @@ function App() {
       {/* contador  de intetos*/}
       <h3> intentos: {attempts}</h3>
       {/* mensaje si perdio  */}
-      {lose ? <h2> PERDISTE {word}</h2> : '  '}
+      {lose ? <h2> 
+VOCÊ PERDEU, era {word}</h2> : '  '}
       {/* mensaje si gano */}
-      {won ? <h2> felicidades, usted gano</h2> : '  '}
+      {won ? <h2> parabéns, você ganhou</h2> : '  '}
       {/* botones de letra*/}
       {letters.map(letter => (
         <button onClick={() => checkLetter(letter)} key={letter}>
@@ -80,7 +81,7 @@ function App() {
         </button>
       ))}
       <br /> <br />
-      <button onClick={newGame}>Nuevo juego?</button>
+      <button onClick={newGame}>Novo jogo?</button>
     </div>
   )
 }
