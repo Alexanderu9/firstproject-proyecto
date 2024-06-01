@@ -3,7 +3,7 @@ const words: string[] = [
   'ABACATE',
   'PROGRAMADOR',
   'AMARELO',
-  'BLENDER',
+  'ACADEMIA',
   'ESTUDANTE',
   'SISTEMA',
   'DEVELOPER'
