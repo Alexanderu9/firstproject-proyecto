@@ -11,14 +11,14 @@ function App() {
   const [lose, setLose] = useState(false)
   const [won, setWon] = useState(false)
 
-  //determina si a pessoa perdeu
+  //determina se uma pessoa perdeu
   useInsertionEffect(() => {
     if (attempts >= 9) {
       setLose(true)
     }
   }, [attempts])
 
-  // determinar si a pessoa ganhou.
+  // determinar se uma pessoa ganhou.
 
   useEffect(() => {
     //console.log(hiddenWord)
@@ -63,18 +63,18 @@ function App() {
 
   return (
     <div className='card'>
-      {/* imagenes*/}
+      {/* imagens*/}
       <HangImage imageNumber={attempts} />
-      {/* palabra oculta*/}
+      {/* palavra escondida*/}
       <h3>{hiddenWord}</h3>
-      {/* contador  de intetos*/}
+      {/* contador de tentativas*/}
       <h3> Tentativas: {attempts}</h3>
-      {/* mensaje si perdio  */}
+      {/* mensagem se você perdeu  */}
       {lose ? <h2> 
 VOCÊ PERDEU, era {word}</h2> : '  '}
-      {/* mensaje si gano */}
+      {/* mensagem se eu ganhar */}
       {won ? <h2> parabéns, você ganhou</h2> : '  '}
-      {/* botones de letra*/}
+      {/* botões de letras*/}
       {letters.map(letter => (
         <button onClick={() => checkLetter(letter)} key={letter}>
           {letter}
